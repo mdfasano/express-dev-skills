@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var skillsRouter = require('./routes/skills');
-
+var searchRouter = require('./routes/search');
 
 var app = express();
 
@@ -24,6 +24,7 @@ app.use("/js", express.static(path.join(__dirname, 'node_modules/bootstrap/dist/
 
 app.use('/', indexRouter);
 app.use('/skills', skillsRouter);
+app.use('/search', searchRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -13,7 +13,7 @@ function listSkills () {
 
 // returns true if given skill is in the array of skills
 function hasSkill (skill) {
-    return skills.indexOf(skill) ? true : false;
+    return skills.indexOf(skill);
 }
 
 module.exports = {
