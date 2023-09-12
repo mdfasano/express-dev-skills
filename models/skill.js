@@ -7,7 +7,7 @@ const person = {
 const skills = ["C", "C++", "JavaScript", "Python", "Express"];
 
 //simply returns the array of skills
-function getSkills () {
+function listSkills () {
     return skills;
 }
 
@@ -18,5 +18,5 @@ function hasSkill (skill) {
 
 module.exports = {
     hasSkill,
-    getSkills
+    listSkills
 }

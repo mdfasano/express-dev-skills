@@ -7,9 +7,6 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var skillsRouter = require('./routes/skills');
 
-//import skills model/data
-const skillsData = require('./models/skills');
-
 
 var app = express();
 
