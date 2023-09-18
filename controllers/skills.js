@@ -7,16 +7,6 @@ function index (req, res) {
     })
 }
 
-function show (req, res) {
-    let value;
-    if (SkillModel.hasSkill(req.params.id) !== -1) value = true;
-    else value = false;
-    res.render('skills/show', {
-        title: `Has skill ${req.params.id}?`,
-        val: value
-    });
-}
-
 function newSkill (req, res) {
     res.render('skills/new', {
         title: 'New Skill'
@@ -24,12 +14,12 @@ function newSkill (req, res) {
 }
 
 function create (req, res) {
-
+    SkillModel.addSkill(req.body.skill);
+    res.redirect('/skills');
 }
 
 module.exports={ 
     index,
-    show,
     create,
     newSkill
 }
