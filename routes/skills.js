@@ -8,4 +8,5 @@ var skillsController = require('../controllers/skills');
 router.get('/', skillsController.index);
 router.get('/new', skillsController.newSkill);
 router.post('/', skillsController.create);
+router.delete('/:id', skillsController.delete);
 module.exports = router;

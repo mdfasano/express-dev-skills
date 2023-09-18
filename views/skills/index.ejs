@@ -5,6 +5,10 @@
     <ul>
       <% skillsArray.forEach((skill) => { %>
         <li>
+          <form action="/skills/<%= skill %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">X</button>
+          </form>
           <%= skill %>
         </li>
       <% }); %>

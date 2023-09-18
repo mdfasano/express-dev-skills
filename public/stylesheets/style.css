@@ -13,3 +13,16 @@ a {
 .navbar {
   padding-bottom: 40px;
 }
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
+}
+	
+li {
+  list-style: none;
+}

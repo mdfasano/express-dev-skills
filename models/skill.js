@@ -21,8 +21,16 @@ function addSkill (skill) {
     return skills;
 }
 
+function deleteSkill (skill) {
+    console.log(skill.id)
+    const index = skills.indexOf(skill);
+    skills.splice(index, 1);
+    return skills;
+}  
+
 module.exports = {
     hasSkill,
     listSkills,
-    addSkill
+    addSkill,
+    deleteSkill
 }
