@@ -17,7 +17,19 @@ function show (req, res) {
     });
 }
 
+function newSkill (req, res) {
+    res.render('skills/new', {
+        title: 'New Skill'
+    });
+}
+
+function create (req, res) {
+
+}
+
 module.exports={ 
     index,
     show,
+    create,
+    newSkill
 }

@@ -16,7 +16,13 @@ function hasSkill (skill) {
     return skills.indexOf(skill);
 }
 
+function addSkill (skill) {
+    skills.push(skill);
+    return skills;
+}
+
 module.exports = {
     hasSkill,
-    listSkills
+    listSkills,
+    addSkill
 }
